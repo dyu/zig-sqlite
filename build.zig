@@ -130,6 +130,12 @@ const all_test_targets = switch (builtin.target.cpu.arch) {
                 },
                 .bundled = true,
             },
+            TestTarget{
+                .target = .{
+                    .cpu_arch = .aarch64,
+                },
+                .bundled = true,
+            },
         },
         else => [_]TestTarget{
             TestTarget{
